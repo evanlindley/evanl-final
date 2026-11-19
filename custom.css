@@ -1,3 +1,23 @@
+/*** COLORS
+https://coolors.co/palette/800016-a0001c-c00021-ff002b-ffffff-407ba7-004e89-002962-00043a
+***/
+
+body {
+  --color-lightblue: #7bb5e2;
+  --color-darkred: #800016;
+  --color-mutedred: #C00021;
+  --color-darkblue: #002962;
+  --color-deepblue: #00043A;
+  --color-clean: #ffffff;
+
+  --color-bg: var(--color-lightblue);
+  --color-primary: var(--color-mutedred);
+
+  background-color: var(--color-bg);
+}
+
+
+/*** FONTS ***/
 h1,
 h2,
 h3,
@@ -18,4 +38,34 @@ summary,
 caption,
 th {
   font-family: "Poppins", sans-serif;
+}
+
+/*** NAVBAR ***/
+#nav-logo {
+  max-height: 40px;
+  max-width: 40px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.nav-over.is-solid {
+  color: var(--color-clean);
+  background: color-mix(in oklch, var(--color-darkred) 92%, transparent);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 0 color-mix(in oklch, var(--color-mutedred) 12%, transparent);
+}
+
+
+
+
+/*** FOOTER ***/
+#footer-head {
+  font-size: 20px;
+}
+
+#footer-logo {
+  max-height: 50px;
+  max-width: 50px;
+  min-height: 20px;
+  min-width: 20px;
 }
